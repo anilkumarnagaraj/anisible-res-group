@@ -11,6 +11,7 @@
     - name: Create resource Group
       ibm_resource_group:
         name: "{{ resource_group_name }}"
+        ibmcloud_api_key: "{{ ibmcloud_api_key }}"
       register: rg_create_output
       
     - name: Save newly created resource group info as fact
