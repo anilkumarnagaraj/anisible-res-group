@@ -14,7 +14,6 @@
              items2dict(key_name='name', value_name='id')
 
     - ibm_is_instance_profiles_info:
-        ibmcloud_api_key: "{{ ibmcloud_api_key }}"
       register: instance_profiles_list
 
     - debug:
