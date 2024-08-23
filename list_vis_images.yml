@@ -12,9 +12,3 @@
     - debug:
         var: images_list.resource.images |
              items2dict(key_name='name', value_name='id')
-
-    - ibm_is_instance_profiles_info:
-      register: instance_profiles_list
-
-    - debug:
-        var: instance_profiles_list.resource.profiles | list
