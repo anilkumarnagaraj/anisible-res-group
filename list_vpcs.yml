@@ -1,0 +1,10 @@
+---
+- name: List VPC's
+  hosts: localhost
+  collections:
+   - ibm.cloudcollection
+
+  tasks:
+    - ibm_is_vpcs_info:
+        ibmcloud_api_key: "{{ ibmcloud_api_key }}"
+      register: vpcs_list
